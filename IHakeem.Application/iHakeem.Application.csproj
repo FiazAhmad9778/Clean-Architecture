@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="FluentValidation" Version="10.0.4" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IHakeem.Common\iHakeem.SharedKernal.csproj" />
+    <ProjectReference Include="..\IHakeem.Database\iHakeem.Database.csproj" />
+    <ProjectReference Include="..\IHakeem.Domain.Models\iHakeem.Domain.Models.csproj" />
+    <ProjectReference Include="..\iHakeem.Domain\iHakeem.Domain.csproj" />
+    <ProjectReference Include="..\IHakeem.Infrastructure.EF\iHakeem.Infrastructure.EF.csproj" />
+    <ProjectReference Include="..\iHakeem.Infrastructure.FileStorage\iHakeem.Infrastructure.FileStorage.csproj" />
+    <ProjectReference Include="..\iHakeem.Infrastructure.Security.Abstractions\iHakeem.Infrastructure.Security.Abstractions.csproj" />
+    <ProjectReference Include="..\iHakeem.Resources\iHakeem.Resources.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="EMR\EMRPatientHistory\CommandHandlers\" />
+    <Folder Include="MyVitals\VitalsPatientHistory\CommandHandlers\" />
+  </ItemGroup>
+
+</Project>

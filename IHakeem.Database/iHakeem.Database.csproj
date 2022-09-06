@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Migrations\20210601122907_ForeignKeyWithPatients.cs" />
+	  <Compile Remove="Migrations\20210601122907_ForeignKeyWithPatients.Designer.cs" />
+	  <Compile Remove="Migrations\20210623060316_patientGender.cs" />
+	  <Compile Remove="Migrations\20210623060316_patientGender.Designer.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.5" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.5">
+			<GenerateRuntimeConfigurationFiles>True</GenerateRuntimeConfigurationFiles>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.5" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.5">
+			<GenerateRuntimeConfigurationFiles>True</GenerateRuntimeConfigurationFiles>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="NReco.Logging.File" Version="1.1.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\iHakeem.Domain.Models\iHakeem.Domain.Models.csproj" />
+	</ItemGroup>
+
+</Project>

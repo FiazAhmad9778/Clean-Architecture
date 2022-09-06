@@ -1,0 +1,12 @@
+{
+  "UserNameAlreadyExist": "User name already exist!",
+  "PhoneNumberAlreadyExist": "PhoneNumber already exist!",
+  "EmailAlreadyExist": "Email elready exist!",
+  "InvalidVerificationCode": "Verification code is incorrect, please enter the correct Verification code!",
+  "InvalidUserId": "Invalid user id!",
+  "InValidUsernameOrPassword": "InValid username or password!",
+  "UserNamePendingRegisteration": "Already registered with this username, please enter verification code!",
+  "EmailPendingRegisteration": "Already registered with this email, please enter verification code!",
+  "PhoneNumberPendingRegisteration": "Already registered with this phone number, please enter verification code!",
+  "InValidOldPassword": "InValid old password!"
+}

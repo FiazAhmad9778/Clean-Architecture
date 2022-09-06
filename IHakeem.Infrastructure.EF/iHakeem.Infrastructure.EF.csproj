@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+    <LangVersion>8.0</LangVersion>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\IHakeem.Domain\iHakeem.Domain.csproj" />
+	  <ProjectReference Include="..\IHakeem.Infrastructure.Common\iHakeem.Infrastructure.Common.csproj" />
+	</ItemGroup>
+
+</Project>
